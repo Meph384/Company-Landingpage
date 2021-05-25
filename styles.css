@@ -34,7 +34,7 @@ header::after {
     clear: both;
 }
 
-.menu { 
+.menu {
     width: 80%;
     margin: 0 auto;
 }
@@ -66,18 +66,18 @@ nav li {
     position: relative;
 }
 
-nav ul > li > a {
+nav ul>li>a {
     color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
-nav ul > li > a:hover {
+nav ul>li>a:hover {
     font-weight: bold;
 }
 
-nav ul > li > a::before {
+nav ul>li>a::before {
     content: '';
     display: block;
     height: 2px;
@@ -94,22 +94,6 @@ nav a:hover::before {
 }
 
 /*-- End of navbar --*/
-
-/*-- Main Content --*/
-/* .baner {
-    padding-top: 100px;
-    background-image: url(./img/hero_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr) .25fr;
-}
-
-.hero_baner {
-    grid-area: 2 / 2 / 2 / 6;
-    background-color: aquamarine;
-} */
 
 .bg_image {
     background-image: url(./img/hero_bg.jpg);
@@ -136,27 +120,101 @@ nav a:hover::before {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: auto 0;
+    margin: 0 auto;
     border-radius: 30px;
 }
 
 .bg_text h1 {
     color: var(--white);
     margin: 0;
-    padding: 50px 50px 0px 50px;
-    font-size: 2.75rem;
+    padding: 80px 50px 0px 50px;
+    font-size: 3rem;
     text-align: center;
 }
 
 .bg_text p {
     color: var(--white);
     padding-bottom: 62px;
-    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'Open Sans', Sans-Serif;
+    text-align: center;
 }
 
-.bg_text h1 > span { 
+.bg_text h1>span {
     color: rgb(70 63 87);
 }
+
+/* End of heropage */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+@media (max-width: 1645px) {
+    .bg_text h1 {
+        font-size: 2.8rem;
+    }
+
+    .bg_text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1545px) {
+    .bg_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .bg_text p {
+        font-size: 1rem;
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 1390px) {
+    .bg_text h1 {
+        font-size: 2.25rem;
+    }
+
+    .bg_text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .bg_text h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 985px) {
+    nav ul>li>a {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    nav ul>li>a {
+        font-size: .8rem;
+    }
+
+    nav li {
+        padding-top: 27px;
+    }
+
+    .menu img {
+        width: 50px;
+    }
+
+    nav ul>li>a::before {
+        content: '';
+        top: 45px;
+    }
+}
+
+/*-- do 755px --*/
+
+
 /* Font-Family: 'Raleway', Sans-Serif;
 Font-Size: 44px;
 Font-Family: 'Open Sans', Sans-Serif;
